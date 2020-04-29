@@ -47,7 +47,7 @@ def main():
 	macd_df['macd'] = macd_df['ema_fast'] - macd_df['ema_slow']
 	macd_df['signal'] = macd_df['macd'].ewm(span=args.signal).mean()
 
-	fig, (fig1, fig2) = plt.subplots(2,1, gridspec_kw = {'height_ratios':[3, 1]})
+	fig, (fig1, fig2) = plt.subplots(2, 1, gridspec_kw = {'height_ratios':[3, 1]})
 
 	fig1.xaxis.set_major_formatter(mdates.DateFormatter('%m-%d'))
 	fig1.set_title("Moving Average")
