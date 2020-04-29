@@ -6,7 +6,7 @@ It is based on the data format provided by Tokyo Metropolitan Government.
 
 # Recommendation
 
-  Python 3.6 or later, pandas, matplotlib (pyplot, dates)
+  Python 3.6 or later, pandas, matplotlib (pyplot, dates).
   Developed in the Anaconda environment.
 
 
