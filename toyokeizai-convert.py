@@ -15,7 +15,6 @@ def process(fp):
 	for row in reader:
 		date = f"{row['年']}-{row['月']}-{row['日']}"
 		count = int(row['PCR検査陽性者'])
-#		print(date, count)
 
 		if count != prev_count:
 			delta_count = count - prev_count
