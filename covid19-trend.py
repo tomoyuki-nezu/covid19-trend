@@ -13,7 +13,7 @@ import matplotlib.dates as mdates
 
 def get_args():
 	parser = argparse.ArgumentParser()
-	parser.add_argument('--source', type=str, default="https://stopcovid19.metro.tokyo.lg.jp/data/130001_tokyo_covid19_patients.csv", help="CSV data url or file.")
+	parser.add_argument('--source', type=str, help="CSV data url or file.")
 	parser.add_argument('--fast', type=int, default=12, help="Fast length.")
 	parser.add_argument('--slow', type=int, default=26, help="Slow length.")
 	parser.add_argument('--signal', type=int, default=9, help="Signal length.")
